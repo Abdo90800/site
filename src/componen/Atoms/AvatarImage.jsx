@@ -9,7 +9,7 @@ const AvatarImage = ({ src, alt }) => {
       alt={alt}
       width={40}
       height={40}
-      style={{ borderRadius: "50%" }}
+      style={{ borderRadius: "50%"   }}
     />
   );
 };
