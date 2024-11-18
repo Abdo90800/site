@@ -3,6 +3,7 @@ import HeaderSection from '../Organisms/HeaderSection'
 import Home from '../Organisms/Home'
 import OurServicesHome from '../Organisms/OurServicesHome'
 import Ourwork from '../Organisms/Ourwork'
+import SliderImgPhone from '../Organisms/SliderImgPhone'
 
 function HomeTemplate() {
   return (
@@ -20,6 +21,7 @@ function HomeTemplate() {
     <Home/>
     <OurServicesHome/>
     <Ourwork/>
+    <SliderImgPhone/>
     </>
   )
 }

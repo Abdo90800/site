@@ -1,8 +1,10 @@
-import ImgSwipper from "../Molecules/imgSwipper";
-
-
+import Swipperimg from "../Molecules/swipperimg";
 const SliderImgPhone = () => {
-  return <div><ImgSwipper/></div>;
+  return (
+    <section className="swipperImg-section" style={{margin:"5px 0"}}>
+      <Swipperimg />
+    </section>
+  );
 };
 
 export default SliderImgPhone;
