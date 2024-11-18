@@ -8,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Imgatom from "../Atoms/Imgatom";
 import Text from "../Atoms/Text";
+import Buttonn from "../Atoms/Buttonn";
 const mainbath = "/images/imgswipper";
 const images = [
   `${mainbath}/img-swipper-4.png`,
@@ -24,19 +25,19 @@ const images = [
 
 const Swipperimg = () => {
   return (
-    <div className="container">
+    <main className="container">
       <Swiper
         pagination={{ clickable: true }}
         spaceBetween={20}
         breakpoints={{
           500: {
-            slidesPerView: 3, 
+            slidesPerView: 3,
           },
           768: {
-            slidesPerView: 3, 
+            slidesPerView: 3,
           },
           1280: {
-            slidesPerView: 5, 
+            slidesPerView: 5,
           },
         }}
         className="flex justify-center items-center"
@@ -55,21 +56,39 @@ const Swipperimg = () => {
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>
-      <Text
-        text={
-          <div className="text-center w-full bg-red-800">
-            <p>Coming Soon...</p>
-            <p>
-              <span>”Dashboard”</span> to view and control your business
-            </p>
-          </div>
-        }
-        styleClass={"text-center w-full bg-red-800"}
-        style={{}}
-      />
-      <p>hhhhhhhhhhhhhhhh</p>
-    </div>
+      </Swiper>{" "}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Text
+          text={
+            <div className="text-center w-full " style={{ margin: "10px 0" }}>
+              <p>Coming Soon...</p>
+              <p>
+                <strong style={{ fontWeight: "bold" }}>”Dashboard”</strong> to
+                view and control your business
+              </p>
+            </div>
+          }
+          style={{
+            fontSize: "16px",
+            fontWeight: "400",
+            color: "black",
+            lineHeight: "24px",
+            textAlign: "center",
+            margin: "10px 0",
+            fontSize: "24px",
+            lineHeight: "36px",
+          }}
+        />
+        <Buttonn>Join our waiting list</Buttonn>
+      </div>
+    </main>
   );
 };
 
