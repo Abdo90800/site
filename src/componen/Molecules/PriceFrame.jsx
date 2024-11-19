@@ -39,25 +39,16 @@ const PriceFrame = () => {
           lineHeight: "20px",
         }}
       />
-      <Container className="price-container flex justify-center  bg-[#E7E7E7] p-4 rounded-3xl gap-4 mt-8">
+      <Container className="price-container flex justify-center bg-[#E7E7E7] p-4 rounded-3xl gap-4 mt-8 flex-col lg:flex-row">
         {images.map((img, index) => (
           <div
             key={index}
-            style={{
-              width: index === 0 ? "616px" : "300px",
-              height: "491px",
-              overflow: "hidden",
-              borderRadius: "12px",
-            }}
+            className={`w-full ${index === 0 ? 'lg:w-[616px]' : 'lg:w-[300px]'} h-[491px] overflow-hidden rounded-2xl`}
           >
             <Imgatom
               src={img}
               alt={`Image ${index + 1}`}
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
+              className="w-full h-full object-cover rounded-2xl"
             />
           </div>
         ))}

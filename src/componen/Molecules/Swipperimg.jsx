@@ -10,52 +10,54 @@ import Text from "../Atoms/Text";
 import Buttonn from "../Atoms/Buttonn";
 const mainbath = "/images/imgswipper";
 const images = [
-  `${mainbath}/img-swipper-4.png`,
+  `${mainbath}/img-swipper-1.png`,
   `${mainbath}/img-swipper-2.png`,
+  `${mainbath}/img-swipper-3.png`,
+  `${mainbath}/img-swipper-4.png`,
   `${mainbath}/img-swipper-5.png`,
-  `${mainbath}/img-swipper-4.png`,
+  `${mainbath}/img-swipper-1.png`,
   `${mainbath}/img-swipper-2.png`,
+  `${mainbath}/img-swipper-3.png`,
   `${mainbath}/img-swipper-4.png`,
-  `${mainbath}/img-swipper-2.png`,
   `${mainbath}/img-swipper-5.png`,
-  `${mainbath}/img-swipper-4.png`,
-  `${mainbath}/img-swipper-2.png`,
 ];
 
 const Swipperimg = () => {
   return (
-    <main className="container">
+    <main className="container  ">
       <Swiper
         pagination={{ clickable: true }}
-        spaceBetween={20}
+        spaceBetween={80}
         breakpoints={{
           500: {
-            slidesPerView: 3,
+            slidesPerView: 1,
           },
           768: {
             slidesPerView: 3,
           },
-          1280: {
+          1428: {
+            slidesPerView: 4,
+          },
+          1431: {
             slidesPerView: 5,
           },
         }}
-        className="flex justify-center items-center"
+        className="flex justify-center items-center mx-auto "
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            {/* تحديد عرض وارتفاع ثابت للصورة */}
-            <div className="w-[300px] h-[500px] overflow-hidden rounded-lg mx-auto">
+            <div className="w-[302px] h-[654px] overflow-hidden rounded-lg mx-auto">
               <Imgatom
                 src={img}
                 alt={`Image ${index + 1}`}
-                width={300}
-                height={500}
+                fill
                 className="object-cover rounded-lg"
               />
             </div>
           </SwiperSlide>
         ))}
-      </Swiper>{" "}
+      </Swiper>
+      {/* text & btn */}
       <div
         style={{
           display: "flex",
