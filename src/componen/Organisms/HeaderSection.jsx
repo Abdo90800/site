@@ -16,13 +16,12 @@ const HeaderSection = () => (
         text={
           <>
             <span>Helping Brands to Stand</span> <br />
-            <span> Out in The Digital Era</span>
+            <span>Out in The Digital Era</span>
           </>
         }
-    
       />
       <Text
-      className="text-weare"
+        className="text-weare"
         text={
           <>
             <span>We are here to create the best software product for.</span>
@@ -37,7 +36,6 @@ const HeaderSection = () => (
           color: "white",
           lineHeight: "24px",
           textAlign: "center",
-      
         }}
       />
       <CallToActionCard />
