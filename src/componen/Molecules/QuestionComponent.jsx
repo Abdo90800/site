@@ -11,7 +11,7 @@ const QuestionComponent = () => {
         </h1>
         <button className="text-3xl lg:text-5xl">-</button>
       </header>
-      <p className="pr-4 pl-2 mt-3 text-sm lg:text-lg font-normal leading-6 text-[#494949]">
+      <p className="pr-4 pl-2 my-1 text-sm lg:text-lg font-normal leading-6 text-[#494949]">
         Setting up  Epoque   is as easy as pie - and you don't even have to bake
         anything. Our intuitive onboarding process will guide you step by step.
         You'll be up and running before you know it

@@ -6,6 +6,8 @@ import Ourwork from "../Organisms/Ourwork";
 import SliderImgPhone from "../Organisms/SliderImgPhone";
 import PriceSection from "../Organisms/PriceSection";
 import QuestionSection from "../Organisms/QuestionSection";
+import Footer from "../Molecules/Footer";
+import FooterSection from "../Organisms/FooterSection";
 
 function HomeTemplate() {
   return (
@@ -23,9 +25,10 @@ function HomeTemplate() {
       <HomeCard />
       <OurServicesHome />
       <Ourwork />
-      <SliderImgPhone/>
-      <PriceSection/>
-      <QuestionSection/>
+      <SliderImgPhone />
+      <PriceSection />
+      <QuestionSection />
+      <FooterSection />
     </>
   );
 }

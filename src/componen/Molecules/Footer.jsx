@@ -2,11 +2,10 @@
 import React from "react";
 import Link from "../atoms/Link";
 import Buttonn from "../Atoms/Buttonn";
-
 const Footer = () => (
   <div className="NAVBAR">
     <div className="navbar-content">
-      <Link>
+      <Link href="/">
         <img src="/logo.png" alt="Logo" className="logo" />
       </Link>
       <Link href="#services">Services</Link>

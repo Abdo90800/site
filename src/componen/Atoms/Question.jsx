@@ -9,7 +9,7 @@ const Question = ({ children, className ,Answer}) => {
   };
   return (
     <div>
-      <div className="flex justify-between items-center mt-4 pr-8 pl-2 ">
+      <div className="flex justify-between items-center my-2 pr-8 pl-2 ">
         <h1 className="font-semibold text-xl text-[#121212]">{children}</h1>
         <button className="text-4xl" onClick={handleAddQustion}>
           {open ? "-" : "+"}

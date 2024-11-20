@@ -1,13 +1,13 @@
 // src/components/organisms/HeaderSection.js
-import Navbar from "../molecules/Navbar";
-import Heading from "../atoms/Heading";
-import Text from "../atoms/Text";
-import CallToActionCard from "../molecules/CallToActionCard";
+import Footer from "../Molecules/Footer";
+import Heading from "../Atoms/Heading";
+import Text from "../Atoms/Text";
+import CallToActionCard from "../Molecules/CallToActionCard";
 
-const HeaderSection = () => (
+const FooterSection = () => (
   <header className="header-section">
     <div>
-      <Navbar />
+      <Footer />
     </div>
 
     <div className="main-content">
@@ -35,4 +35,4 @@ const HeaderSection = () => (
   </header>
 );
 
-export default HeaderSection;
+export default FooterSection;
