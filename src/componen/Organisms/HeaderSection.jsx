@@ -15,13 +15,15 @@ const HeaderSection = () => (
       <Heading
         text={
           <>
-            <span>Helping Brands to Stand</span> <br />
-            <span>Out in The Digital Era</span>
+            <span className="help-text">Helping Brands to Stand</span> <br />
+            <span className="help-text">Out in The Digital Era</span>
           </>
         }
+
+        
       />
       <Text
-        className="text-weare"
+        className="subtext"
         text={
           <>
             <span>We are here to create the best software product for.</span>
@@ -30,13 +32,7 @@ const HeaderSection = () => (
           </>
         }
         styleClass="subtext"
-        style={{
-          fontSize: "16px",
-          fontWeight: "400",
-          color: "white",
-          lineHeight: "24px",
-          textAlign: "center",
-        }}
+        
       />
       <CallToActionCard />
     </div>

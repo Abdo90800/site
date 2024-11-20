@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Text from "../Atoms/Text";
 import Container from "@mui/material/Container";
+
 function Ourwork() {
   return (
-    <div style={{marginBottom:"50px"}} id="work">
+    <div style={{ marginBottom: "50px" }} id="work">
       <Text
         text={
           <div className="pairenttextclients">
@@ -17,11 +18,11 @@ function Ourwork() {
       />
       <Container
         className="imagesgalssteel"
-        style={{
+        sx={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-      
+          flexWrap: { xs: "wrap", md: "nowrap" }, // استخدم flexWrap هنا بدون marginBottom
         }}
       >
         <img
@@ -32,7 +33,7 @@ function Ourwork() {
         />
         <img
           src="/images/Glasstel2.png"
-          alt="Glasstel1"
+          alt="Glasstel2"
           className="glasstel"
           style={{ width: "570px", height: "427px" }}
         />

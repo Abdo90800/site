@@ -35,12 +35,14 @@ function OurServicesCard() {
       <Text
         text={
           <div className="pairenttextclients">
-            <span className="textListen">Our Services</span>
+            <span className="textList">Our Services</span>
             <span className="textclients">we can help you with</span>{" "}
-            <span className="offerday">
-              🎉It's our birthday 40% off - 1-day limited offer click to Learn
-              more🎉
-            </span>
+            <div className="offer">
+              <span className="offerday">
+                🎉It's our birthday 40% off - 1-day limited offer click to Learn
+                more🎉
+              </span>
+            </div>
           </div>
         }
         className="textListen"
@@ -50,7 +52,7 @@ function OurServicesCard() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          flexDirection: "row",
+          flexDirection: { xs: "column", sm: "row" }, // Change direction based on screen size
         }}
       >
         {arr.map((e) => (
