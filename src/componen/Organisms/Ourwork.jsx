@@ -3,7 +3,7 @@ import Text from "../Atoms/Text";
 import Container from "@mui/material/Container";
 function Ourwork() {
   return (
-    <div style={{marginBottom:"50px"}}>
+    <div style={{marginBottom:"50px"}} id="work">
       <Text
         text={
           <div className="pairenttextclients">

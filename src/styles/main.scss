@@ -5,3 +5,6 @@
 @use "./Ower-service.scss" as *;
 @use "./Ourwork" as *;
 @use "./imgcover.scss" as *;
+html {
+    scroll-behavior: smooth;
+}

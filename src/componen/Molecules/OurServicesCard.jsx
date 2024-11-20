@@ -1,14 +1,10 @@
-// Import required components
+import React from "react";
 import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
-import Image from "next/image";
-// import ima1 from "../../public/images/webdev.png";
-// import ima2 from "../../public/images/mobiledev.png";
-// import ima3 from "../../public/images/uxui.png";
-import Text from "../Atoms/Text";
-
 import Typography from "@mui/joy/Typography";
 import Container from "@mui/material/Container";
+import Text from "../Atoms/Text";
+
 function OurServicesCard() {
   const arr = [
     {
@@ -35,14 +31,14 @@ function OurServicesCard() {
   ];
 
   return (
-    <>
+    <section id="services">
       <Text
         text={
           <div className="pairenttextclients">
             <span className="textListen">Our Services</span>
             <span className="textclients">we can help you with</span>{" "}
             <span className="offerday">
-            🎉Its our birthday 40%off - 1 - day limited offer click to Learn
+              🎉It's our birthday 40% off - 1-day limited offer click to Learn
               more🎉
             </span>
           </div>
@@ -57,68 +53,66 @@ function OurServicesCard() {
           flexDirection: "row",
         }}
       >
-        {arr.map((e) => {
-          return (
-            <div key={e.id} style={{ mb: 20 }}>
-              <Card
-                sx={{
-                  height: "256px",
-                  border: "none",
-                  borderRadius: "16px",
-                  overflow: "hidden",
-                  position: "relative",
-                  backgroundColor: "white",
-                  cursor: "pointer",
-                  padding: "16px",
-                  gap: "16px",
-                  "&:hover": {
-                    background: "linear-gradient(45deg,#F0F0F0, #E0E0E0)",
-                  },
-                }}
-              >
-                <CardContent sx={{ textAlign: "center" }}>
-                  <img
-                    src={e.photo}
-                    alt="image"
-                    width={80}
-                    height={80}
-                    style={{
-                      paddingLeft: "10px",
-                      borderRadius: "10px",
-                      color: "#EAEAEA",
-                      margin: "5px",
-                    }}
-                  />
-                  <hr style={{ color: "#EAEAEA", margin: "5px" }} />
-                  <Typography
-                    sx={{
-                      fontWeight: "400",
-                      color: "#121212",
-                      lineHeight: "24px",
-                      textAlign: "start",
-                      paddingBottom: "10px",
-                    }}
-                  >
-                    {e.name}
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontWeight: "400",
-                      fontSize: "16px",
-                      color: "#494949",
-                      lineHeight: "24px",
-                      textAlign: "start",
-                    }}
-                  >
-                    {e.discription}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </div>
-          );
-        })}
+        {arr.map((e) => (
+          <div key={e.id} style={{ mb: 20 }}>
+            <Card
+              sx={{
+                height: "256px",
+                border: "none",
+                borderRadius: "16px",
+                overflow: "hidden",
+                position: "relative",
+                backgroundColor: "white",
+                cursor: "pointer",
+                padding: "16px",
+                gap: "16px",
+                "&:hover": {
+                  background: "linear-gradient(45deg,#F0F0F0, #E0E0E0)",
+                },
+              }}
+            >
+              <CardContent sx={{ textAlign: "center" }}>
+                <img
+                  src={e.photo}
+                  alt="image"
+                  width={80}
+                  height={80}
+                  style={{
+                    paddingLeft: "10px",
+                    borderRadius: "10px",
+                    color: "#EAEAEA",
+                    margin: "5px",
+                  }}
+                />
+                <hr style={{ color: "#EAEAEA", margin: "5px" }} />
+                <Typography
+                  sx={{
+                    fontWeight: "400",
+                    color: "#121212",
+                    lineHeight: "24px",
+                    textAlign: "start",
+                    paddingBottom: "10px",
+                  }}
+                >
+                  {e.name}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "16px",
+                    color: "#494949",
+                    lineHeight: "24px",
+                    textAlign: "start",
+                  }}
+                >
+                  {e.discription}
+                </Typography>
+              </CardContent>
+            </Card>
+          </div>
+        ))}
       </Container>
-    </>
+    </section>
   );
 }
 
