@@ -5,6 +5,7 @@ import OurServicesHome from "../Organisms/OurServicesHome";
 import Ourwork from "../Organisms/Ourwork";
 import SliderImgPhone from "../Organisms/SliderImgPhone";
 import PriceSection from "../Organisms/PriceSection";
+import QuestionSection from "../Organisms/QuestionSection";
 
 function HomeTemplate() {
   return (
@@ -24,6 +25,7 @@ function HomeTemplate() {
       <Ourwork />
       <SliderImgPhone />
       <PriceSection />
+      <QuestionSection/>
     </>
   );
 }
