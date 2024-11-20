@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderSection from "../Organisms/HeaderSection";
-import Home from "../Organisms/Home";
+import HomeCard from "../Organisms/HomeCard";
 import OurServicesHome from "../Organisms/OurServicesHome";
 import Ourwork from "../Organisms/Ourwork";
 import SliderImgPhone from "../Organisms/SliderImgPhone";
@@ -20,12 +20,9 @@ function HomeTemplate() {
       >
         <HeaderSection />
       </div>
-      <Home />
+      <HomeCard />
       <OurServicesHome />
       <Ourwork />
-      <SliderImgPhone />
-      <PriceSection />
-      <QuestionSection/>
     </>
   );
 }

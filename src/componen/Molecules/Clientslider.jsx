@@ -1,7 +1,6 @@
 // components/organisms/CardsSlider.js
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import Clientslid from "../atoms/Clientslid";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -23,7 +22,7 @@ const Clientslider = ({ cardsData }) => {
           slidesPerView: 3,
         },
       }}
-      className="max-w-screen-xl mx-auto px-2"
+      className="max-w-screen-xl px-2 mx-auto"
     >
       {cardsData.map((product, index) => (
         <SwiperSlide key={index}>

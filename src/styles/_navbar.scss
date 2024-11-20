@@ -1,3 +1,6 @@
+$mobile: 600px;
+$tablet: 768px;
+$desktop: 1024px;
 .call-to-action-card {
     display: flex;
     justify-content: center;
@@ -87,4 +90,27 @@
     line-height: 72px;
     color: #FFFFFF;
     text-align: center;
+    .subtext {
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+        line-height: 24px;
+        text-align: center;
+    }
+    @media (max-width: $tablet) {}
+    @media (max-width: $mobile) {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: center;
+        .subtext {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+            padding: 8px 0px;
+        }
+    }
 }
+
+// .help-text {}
