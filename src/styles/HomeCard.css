@@ -1,38 +1,60 @@
+@charset "UTF-8";
 .swiper-pagination {
   display: flex;
   justify-content: center;
+  /* لتمركز النقاط */
   align-items: center;
   gap: 8px;
+  /* المسافة بين النقاط */
   margin-top: 20px;
+  /* مسافة أعلى النقاط */
 }
 
 .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
+  /* عرض النقطة */
   height: 8px;
+  /* ارتفاع النقطة */
   background-color: gray;
+  /* لون النقطة العادية */
   border-radius: 50%;
+  /* جعل النقاط دائرية */
   transition: all 0.3s ease;
+  /* تأثير عند التبديل */
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #000;
+  /* لون النقطة النشطة */
   width: 30px;
+  /* جعل النقطة النشطة أكبر */
   border-radius: 16px;
+  /* جعل النقطة النشطة بيضاوية */
 }
 
 @media (max-width: 1024px) {
-  .swiper-pagination .swiper-pagination-bullet {
+  .swiper-pagination-bullet {
     background-color: gray;
     border: none;
   }
-  .swiper-pagination .swiper-pagination-bullet:nth-child(n + 5) {
+  .swiper-pagination-bullet:nth-child(n + 5) {
     display: none;
   }
-  .swiper-pagination .swiper-pagination-bullet:nth-child(-n + 4) {
+  .swiper-pagination-bullet:nth-child(-n + 4) {
     border: 1px solid gray;
   }
-  .swiper-pagination .swiper-pagination-bullet-active {
+  .swiper-pagination-bullet-active {
     background-color: transparent;
     background-color: #000;
+  }
+  /* إزالة الظلال في الشاشات الصغيرة */
+  .mySwiper::before, .mySwiper::after {
+    background: none;
+    /* إزالة التأثير */
+  }
+  .card:hover {
+    box-shadow: none;
+    /* إزالة الظلال عند المرور في الشاشات الصغيرة */
+    background: linear-gradient(to right, #F0F0F0, #E0E0E0);
   }
 }
