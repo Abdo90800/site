@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import Imgatom from "../Atoms/Imgatom";
 import Text from "../Atoms/Text";
 import Buttonn from "../Atoms/Buttonn";
+
 const mainbath = "/images/imgswipper";
 const images = [
   `${mainbath}/img-swipper-1.png`,
@@ -24,37 +25,40 @@ const images = [
 
 const Swipperimg = () => {
   return (
-    <main className="container  ">
+    <main className="container overflow-hidden mx-auto">
       <Swiper
         pagination={{ clickable: true }}
-        spaceBetween={80}
+        spaceBetween={20} 
         breakpoints={{
+          0: {
+            slidesPerView: 3,
+            spaceBetween: 15, 
+          },
           768: {
-            slidesPerView: 1,
-          },
-          1428: {
             slidesPerView: 4,
+            spaceBetween: 20, 
           },
-          1431: {
-            slidesPerView: 5,
+          1024: {
+            slidesPerView: 4.5, 
+            spaceBetween: 20, 
           },
         }}
         className="flex justify-center items-center mx-auto "
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="w-[302px] h-[654px] overflow-hidden rounded-lg mx-auto">
+            <div className="rounded-[18.52px] w-[151px] h-[326.97px] md:w-[170px] md:h-[350px] lg:w-[302px] lg:h-[653.93px] overflow-hidden mx-auto">
               <Imgatom
                 src={img}
                 alt={`Image ${index + 1}`}
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg  "
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* text & btn */}
+      {/* النص والزر */}
       <div
         style={{
           display: "flex",
@@ -65,7 +69,7 @@ const Swipperimg = () => {
       >
         <Text
           text={
-            <div className="text-center w-full " style={{ margin: "10px 0" }}>
+            <div className="text-center w-full" style={{ margin: "10px 0" }}>
               <p>Coming Soon...</p>
               <p>
                 <strong style={{ fontWeight: "bold" }}>”Dashboard”</strong> to
