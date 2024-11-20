@@ -29,11 +29,8 @@ const Swipperimg = () => {
         pagination={{ clickable: true }}
         spaceBetween={80}
         breakpoints={{
-          500: {
-            slidesPerView: 1,
-          },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 1,
           },
           1428: {
             slidesPerView: 4,

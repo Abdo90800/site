@@ -3,7 +3,7 @@ import Text from "../Atoms/Text";
 import Container from "@mui/material/Container";
 function Ourwork() {
   return (
-    <div style={{marginBottom:"50px"}}>
+    <div style={{ marginBottom: "50px" }}>
       <Text
         text={
           <div className="pairenttextclients">
@@ -15,15 +15,7 @@ function Ourwork() {
         }
         className="textListen"
       />
-      <Container
-        className="imagesgalssteel"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-      
-        }}
-      >
+      <Container className="imagesgalssteel flex flex-col gap-4 justify-center text-center lg:grid lg:grid-cols-2 lg:justify-between items-center mx-auto">
         <img
           src="/images/glasstel.png"
           alt="Glasstel1"
