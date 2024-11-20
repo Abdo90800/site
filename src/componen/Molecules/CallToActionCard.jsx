@@ -31,7 +31,7 @@ const CallToActionCard = () => (
                 height="16"
                 rx="8"
                 fill="#00FF22"
-                fill-opacity="0.25"
+                fillOpacity="0.25"
               />
               <rect x="4" y="4.5" width="8" height="8" rx="4" fill="#00CE1B" />
             </svg>

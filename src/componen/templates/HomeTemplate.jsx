@@ -1,8 +1,11 @@
-import React from 'react'
-import HeaderSection from '../Organisms/HeaderSection'
-import Home from '../Organisms/Home'
-import OurServicesHome from '../Organisms/OurServicesHome'
-import Ourwork from '../Organisms/Ourwork'
+import React from "react";
+import HeaderSection from "../Organisms/HeaderSection";
+import Home from "../Organisms/Home";
+import OurServicesHome from "../Organisms/OurServicesHome";
+import Ourwork from "../Organisms/Ourwork";
+import SliderImgPhone from "../Organisms/SliderImgPhone";
+import PriceSection from "../Organisms/PriceSection";
+import QuestionSection from "../Organisms/QuestionSection";
 
 function HomeTemplate() {
   return (
@@ -20,9 +23,8 @@ function HomeTemplate() {
     <Home/>
     <OurServicesHome/>
     <Ourwork/>
-    
     </>
-  )
+  );
 }
 
-export default HomeTemplate
+export default HomeTemplate;

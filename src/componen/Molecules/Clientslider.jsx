@@ -5,6 +5,7 @@ import Clientslid from "../atoms/Clientslid";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import CardComponent from "../atoms/Clientslid";
 
 const Clientslider = ({ cardsData }) => {
   return (
