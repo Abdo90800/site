@@ -25,7 +25,6 @@ function Ourwork() {
           flexWrap: { xs: "wrap", md: "nowrap" }, // استخدم flexWrap هنا بدون marginBottom
         }}
       >
-        853a5cc10e5ed7333539861939a640d725517479
         <img
           src="/images/glasstel.png"
           alt="Glasstel1"

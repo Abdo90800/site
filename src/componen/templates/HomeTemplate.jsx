@@ -23,6 +23,9 @@ function HomeTemplate() {
       <HomeCard />
       <OurServicesHome />
       <Ourwork />
+      <SliderImgPhone/>
+      <PriceSection/>
+      <QuestionSection/>
     </>
   );
 }
