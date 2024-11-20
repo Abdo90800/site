@@ -1,13 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "../styles/main.scss";
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body{
-  backround: #fff;
 
+body {
+  background: #fff;
+  overflow-x: hidden;
 }

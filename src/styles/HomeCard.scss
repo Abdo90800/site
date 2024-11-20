@@ -1,0 +1,100 @@
+.swiper-pagination {
+    display: flex;
+    justify-content: center; // لتمركز النقاط
+    align-items: center;
+    gap: 8px; // المسافة بين النقاط
+    margin-top: 20px; // مسافة أعلى النقاط
+    .swiper-pagination-bullet {
+        width: 10px; // عرض النقطة
+        height: 8px; // ارتفاع النقطة
+        background-color: gray; // لون النقطة العادية
+        border-radius: 50%; // جعل النقاط دائرية
+        transition: all 0.3s ease; // تأثير عند التبديل
+        &-active {
+            background-color: #000; // لون النقطة النشطة
+            width: 30px; // جعل النقطة النشطة أكبر
+            border-radius: 16px; // جعل النقطة النشطة بيضاوية
+        }
+    }
+    @media (max-width: 1024px) {
+        .swiper-pagination-bullet {
+            background-color: gray;
+            border: none;
+        }
+        .swiper-pagination-bullet:nth-child(n + 5) {
+            display: none;
+        }
+        .swiper-pagination-bullet:nth-child(-n + 4) {
+            border: 1px solid gray;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: transparent;
+            background-color: #000;
+        }
+    }
+}
+
+.mySwiper {
+    position: relative;
+    padding: 0 50px; // Adjust padding to make space for the shadows
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 400px; // Adjust width as needed
+        z-index: 10;
+    }
+    &::before {
+        left: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+    &::after {
+        right: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    }
+    @media (max-width: 750px) {
+        padding: 0;
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}
+
+.card {
+    width: 302px;
+    max-width: 100%;
+    height: 169px;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0px 1px 2px 0px #00000033;
+        background: linear-gradient(to right, #F0F0F0, #E0E0E0);
+    }
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center; // لتمركز النقاط
+    align-items: center;
+    gap: 8px; // المسافة بين النقاط
+    margin-top: 20px; // مسافة أعلى النقاط
+    .swiper-pagination-bullet {
+        width: 10px; // عرض النقطة
+        height: 8px; // ارتفاع النقطة
+        background-color: gray; // لون النقطة العادية
+        border-radius: 50%; // جعل النقاط دائرية
+        transition: all 0.3s ease; // تأثير عند التبديل
+        &-active {
+            background-color: #000; // لون النقطة النشطة
+            width: 30px; // جعل النقطة النشطة أكبر
+            border-radius: 16px; // جعل النقطة النشطة بيضاوية
+        }
+    }
+}

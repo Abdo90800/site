@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.css"
 // import HeaderSection from "@/componen/Organisms/HeaderSection";
 
 export default function RootLayout({ children }) {

@@ -2,9 +2,9 @@
 import React from "react";
 
 const Text = ({ text, styleClass, style }) => (
-  <p className={styleClass} style={style}>
+  <div className={styleClass} style={style}>
     {text}
-  </p>
+  </div>
 );
 
 export default Text;
