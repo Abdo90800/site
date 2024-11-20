@@ -28,19 +28,19 @@ const Swipperimg = () => {
     <main className="container overflow-hidden mx-auto">
       <Swiper
         pagination={{ clickable: true }}
-        spaceBetween={20} 
+        spaceBetween={20}
         breakpoints={{
           0: {
             slidesPerView: 3,
-            spaceBetween: 15, 
+            spaceBetween: 15,
           },
           768: {
             slidesPerView: 4,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 4.5, 
-            spaceBetween: 20, 
+            slidesPerView: 4.5,
+            spaceBetween: 20,
           },
         }}
         className="flex justify-center items-center mx-auto "
@@ -59,17 +59,10 @@ const Swipperimg = () => {
         ))}
       </Swiper>
       {/* النص والزر */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div className="max-w-fit mx-auto flex flex-col justify-center items-center p-4 space-y-4 flex-wrap">
         <Text
           text={
-            <div className="text-center w-full" style={{ margin: "10px 0" }}>
+            <div className="w-full my-[10px]">
               <p>Coming Soon...</p>
               <p>
                 <strong style={{ fontWeight: "bold" }}>”Dashboard”</strong> to
@@ -77,18 +70,11 @@ const Swipperimg = () => {
               </p>
             </div>
           }
-          style={{
-            fontSize: "16px",
-            fontWeight: "400",
-            color: "black",
-            lineHeight: "24px",
-            textAlign: "center",
-            margin: "10px 0",
-            fontSize: "24px",
-            lineHeight: "36px",
-          }}
+          className="w-full text-base md:text-2xl md:leading-9 md:my-[10px] text-center font-normal text-black"
         />
-        <Buttonn>Join our waiting list</Buttonn>
+        <Buttonn className="w-[375px] mx-auto px-4 md:w-auto h-[48px]">
+          Join our waiting list
+        </Buttonn>
       </div>
     </main>
   );

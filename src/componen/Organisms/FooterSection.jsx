@@ -12,23 +12,18 @@ const FooterSection = () => (
 
     <div className="main-content">
       <Heading
+        className="my-8"
         text={
           <>
-            <span className="help-text">Helping Brands to Stand</span> <br />
-            <span className="help-text">Out in The Digital Era</span>
-          </>
-        }
-      />
-      <Text
-        className="subtext"
-        text={
-          <>
-            <span>We are here to create the best software product for.</span>
+            <span className="font-normal text-base leading-[28px] text-[#C8C8C8]">
+              We are here to create the best software product for
+            </span>
             <br />
-            <span>your business</span>
+            <span className="font-normal text-base leading-[28px] text-[#C8C8C8]">
+              your business So, feel free to contact us
+            </span>
           </>
         }
-        styleClass="subtext"
       />
       <CallToActionCard />
     </div>

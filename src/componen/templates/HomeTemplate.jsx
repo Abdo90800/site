@@ -6,7 +6,6 @@ import Ourwork from "../Organisms/Ourwork";
 import SliderImgPhone from "../Organisms/SliderImgPhone";
 import PriceSection from "../Organisms/PriceSection";
 import QuestionSection from "../Organisms/QuestionSection";
-import Footer from "../Molecules/Footer";
 import FooterSection from "../Organisms/FooterSection";
 
 function HomeTemplate() {
@@ -28,7 +27,17 @@ function HomeTemplate() {
       <SliderImgPhone />
       <PriceSection />
       <QuestionSection />
-      <FooterSection />
+      <div
+        className="section"
+        style={{
+          backgroundImage: "url(/Section.png)",
+          backgroundSize: "cover",
+          position: "relative",
+          backgroundPosition:"right"
+        }}
+      >
+        <FooterSection />
+      </div>
     </>
   );
 }
