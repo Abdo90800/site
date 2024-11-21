@@ -150,7 +150,7 @@ const PriceCard = () => {
   ];
 
   return (
-    <section className="cards flex lg:flex items-center justify-between flex-col md:flex-row price-container bg-[#E7E7E7] p-4 rounded-3xl gap-4 mt-8">
+    <section className="cards flex lg:flex items-center justify-between flex-col md:flex-row price-container bg-[#E7E7E7] p-3 rounded-3xl gap-3 mt-8">
       {cardsData.map((card, index) => (
         <PriceCardItem
           key={index}
