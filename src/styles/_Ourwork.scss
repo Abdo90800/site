@@ -1,9 +1,18 @@
-  .containerImg {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      @media (max-width: 600px) {
-          flex-direction: column;
-          gap: 8px;
-      }
-  }
+.containerImg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        transition: transform 0.3s ease;
+    }
+    img:hover {
+        transform: scale(1.2);
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 8px;
+        img:hover {
+            transform: none;
+        }
+    }
+}
