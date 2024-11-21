@@ -28,13 +28,7 @@ function HomeTemplate() {
       <PriceSection />
       <QuestionSection />
       <div
-        className="section"
-        style={{
-          backgroundImage: "url(/Section.png)",
-          backgroundSize: "cover",
-          position: "relative",
-          backgroundPosition:"right"
-        }}
+        className="section relative overflow-hidden lg:bg-[url('/Section.png')] bg-[url('/Footer.png')] bg-cover bg-right lg:rounded-[24px] rounded-[12px] lg:m-[24px] m-[16px] mx-auto"
       >
         <FooterSection />
       </div>

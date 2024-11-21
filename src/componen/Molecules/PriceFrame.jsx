@@ -39,11 +39,13 @@ const PriceFrame = () => {
           lineHeight: "20px",
         }}
       />
-      <Container className="price-container flex justify-center bg-[#E7E7E7] p-4 rounded-3xl gap-4 mt-8 flex-col lg:flex-row">
+      <Container className="price-container flex flex-col lg:flex-row bg-[#E7E7E7] p-4 rounded-3xl gap-4 mt-8">
         {images.map((img, index) => (
           <div
             key={index}
-            className={`w-full ${index === 0 ? 'lg:w-[616px]' : 'lg:w-[300px]'} h-[491px] overflow-hidden rounded-2xl`}
+            className={`relative w-full ${
+              index === 0 ? "lg:w-[616px]" : "lg:w-[300px]"
+            } h-[300px] sm:h-[350px] lg:h-[491px] overflow-hidden rounded-2xl p-2 lg:p-0`}
           >
             <Imgatom
               src={img}

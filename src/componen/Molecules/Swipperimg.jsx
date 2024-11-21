@@ -52,7 +52,7 @@ const Swipperimg = () => {
                 src={img}
                 alt={`Image ${index + 1}`}
                 fill
-                className="object-cover rounded-lg  "
+                className="object-cover rounded-lg"
               />
             </div>
           </SwiperSlide>
@@ -72,9 +72,9 @@ const Swipperimg = () => {
           }
           className="w-full text-base md:text-2xl md:leading-9 md:my-[10px] text-center font-normal text-black"
         />
-        <Buttonn className="w-[375px] mx-auto px-4 md:w-auto h-[48px]">
+        <button className="w-[375px] mx-auto px-4 md:w-auto h-[48px] bg-[#121212] rounded-xl text-white">
           Join our waiting list
-        </Buttonn>
+        </button>
       </div>
     </main>
   );
