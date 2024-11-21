@@ -6,12 +6,12 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 const FooterSection = () => (
-  <header className="header-section w-full h-auto mx-[24px] relative">
+  <header className="header-section w-full h-auto mx-[24px] ">
     <div>
       <Footer />
     </div>
 
-    <div className="main-content">
+    <div className="main-content relative">
       <Heading
         className="my-8"
         text={
@@ -27,10 +27,10 @@ const FooterSection = () => (
         }
       />
       <CallToActionCard />
-      <div className="mt-[100px]">
-        <span className="block border-[0.5px] border-[#C8C8C880] mx-auto w-[50%] lg:w-[1216px] mt-[100px]"></span>
+      <div className="mt-[60px]">
+        <span className="block border-[0.5px] border-[#C8C8C880] mx-auto w-[50%] lg:w-[1216px] "></span>
         <br />
-        <div className="min-w-[1216px] h-[52px] mx-auto flex items-center lg:justify-between justify-center flex-col lg:flex-row ">
+        <div className="absolute bottom-6 min-w-[1216px] h-[52px] mx-auto flex items-center lg:justify-between justify-center flex-col lg:flex-row ">
           <div className="w-[463px] grid grid-rows-3 justify-center lg:flex lg:justify-between text-center text-wrap ">
             <div>
               <p className="font-medium text-xs leading-5 text-[#C8C8C8]">
