@@ -32,7 +32,6 @@ const Clientslider = ({ cardsData }) => {
         ))}
       </Swiper>
       <div className="custom-pagination">
-        {/* هنا يمكن إضافة أي عنصر خاص بالنقاط */}
       </div>
     </div>
   );

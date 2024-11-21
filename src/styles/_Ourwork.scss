@@ -1,15 +1,9 @@
-// .imagesgalssteel {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// }
-// .Glasstel {
-//     width: 628px;
-//     height: 447px;
-//     object-fit: cover;
-//     border-radius: 8px;
-//     -webkit-border-radius: 8px;
-//     -moz-border-radius: 8px;
-//     -ms-border-radius: 8px;
-//     -o-border-radius: 8px;
-// }
+  .containerImg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 600px) {
+          flex-direction: column;
+          gap: 8px;
+      }
+  }

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Text from "../Atoms/Text";
 import Container from "@mui/material/Container";
 
@@ -17,13 +16,8 @@ function Ourwork() {
         className="textListen"
       />
       <Container
-        className="imagesgalssteel"
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: { xs: "wrap", md: "nowrap" }, // استخدم flexWrap هنا بدون marginBottom
-        }}
+        className="containerImg"
+      
       >
         <img
           src="/images/glasstel.png"
