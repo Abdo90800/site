@@ -5,9 +5,9 @@ import "@/styles/price.scss";
 
 const mainbath = "/images/priceImg";
 const images = [
-  `${mainbath}/main.png`,
-  `${mainbath}/PriceCard-Starter.png`,
-  `${mainbath}/PriceCard-Premium.png`,
+  { img: `${mainbath}/img-1.png` },
+  { img: `${mainbath}/PriceCard-Starter.png` },
+  { img: `${mainbath}/PriceCard-Premium.png` },
 ];
 
 const PriceFrame = () => {
