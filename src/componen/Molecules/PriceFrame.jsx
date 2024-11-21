@@ -32,7 +32,7 @@ const PriceFrame = () => {
           lineHeight: "20px",
         }}
       />
-      <Container>
+      <Container className="w-full">
         <PriceCard />
       </Container>
     </div>

@@ -1,8 +1,10 @@
-const ListUl = ({ className, items = [] }) => {
+const ListUl = ({ className, items = [], classli }) => {
   return (
     <ul className={`${className}`}>
       {items.map((item, index) => (
-        <li key={index}>{item}</li>
+        <li className={classli} key={index}>
+          {item}
+        </li>
       ))}
     </ul>
   );
