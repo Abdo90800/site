@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Imgatom from "../Atoms/Imgatom";
 import Text from "../Atoms/Text";
-import Buttonn from "../Atoms/Buttonn";
 
 const mainbath = "/images/imgswipper";
 const images = [
@@ -43,16 +42,15 @@ const Swipperimg = () => {
             spaceBetween: 20,
           },
         }}
-        className="flex justify-center items-center mx-auto "
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-[18.52px] w-[151px] h-[326.97px] md:w-[170px] md:h-[350px] lg:w-[302px] lg:h-[653.93px] overflow-hidden mx-auto">
+            <div className="rounded-[18.52px] w-[151px] h-[326.97px] md:w-[170px] md:h-[350px] lg:w-[290px] lg:h-[653.93px] overflow-hidden ">
               <Imgatom
                 src={img}
                 alt={`Image ${index + 1}`}
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
               />
             </div>
           </SwiperSlide>
