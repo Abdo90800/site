@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .custom-button {
   color: #fff;
   background-color: #121212;
@@ -202,10 +201,6 @@
   line-height: 72px;
   color: #FFFFFF;
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 36px;
-  text-align: center;
 }
 .main-content .subtext {
   font-size: 16px;
@@ -214,18 +209,25 @@
   line-height: 24px;
   text-align: center;
 }
-.main-content .subtext {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: center;
-  padding: 8px 0px;
-}
 
+@media (max-width: 600px) {
+  .main-content {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+  }
+  .main-content .subtext {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    padding: 8px 0px;
+  }
+}
 .mySwiper {
   position: relative;
   padding: 0 50px;
-  /* Adjust padding to make space for the shadows */
 }
 .mySwiper::before, .mySwiper::after {
   content: "";
@@ -233,7 +235,6 @@
   top: 0;
   bottom: 0;
   width: 400px;
-  /* Adjust width as needed */
   z-index: 10;
 }
 .mySwiper::before {
@@ -280,52 +281,38 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* لتمركز النقاط */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  /* المسافة بين النقاط */
   margin-top: 20px;
-  /* مسافة أعلى النقاط */
   position: absolute;
-  /* لتثبيت النقاط */
   bottom: -1px;
-  /* رفع النقاط قليلاً */
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 #pagination .swiper-pagination-bullet {
   width: 10px;
-  /* عرض النقطة */
   height: 8px;
-  /* ارتفاع النقطة */
   background-color: gray;
   border-radius: 50%;
-  /* جعل النقاط دائرية */
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.5;
-  /* تقليل وضوح النقاط غير النشطة */
 }
 #pagination .swiper-pagination-bullet:nth-child(n+5) {
   display: none;
-  /* إخفاء أي نقاط بعد النقطة الرابعة */
 }
 #pagination .swiper-pagination-bullet-active {
   background-color: #000;
-  /* لون النقطة النشطة */
   width: 30px;
-  /* جعل النقطة النشطة أكبر */
   border-radius: 16px;
-  /* جعل النقطة النشطة بيضاوية */
   opacity: 1;
-  /* وضوح كامل للنقطة النشطة */
 }
 @media (max-width: 750px) {
   #pagination {
-    bottom: -30px;
+    bottom: -60px;
     left: 40%;
   }
 }
@@ -449,6 +436,16 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.containerImg img {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.containerImg img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 @media (max-width: 600px) {
   .containerImg {
     -webkit-box-orient: vertical;
@@ -456,6 +453,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 8px;
+  }
+  .containerImg img:hover {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 

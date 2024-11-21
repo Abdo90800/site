@@ -14,8 +14,8 @@ const HeaderSection = () => (
       <Heading
         text={
           <>
-            <span className="help-text">Helping Brands to Stand</span> <br />
-            <span className="help-text">Out in The Digital Era</span>
+            <span className="helptext">Helping Brands to Stand</span> <br />
+            <span className="helptext">Out in The Digital Era</span>
           </>
         }
       />

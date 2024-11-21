@@ -1,1 +1,1 @@
-.containerImg{display:flex;justify-content:space-between;align-items:center}@media (max-width: 600px){.containerImg{flex-direction:column;gap:8px}}
+.containerImg{display:flex;justify-content:space-between;align-items:center}.containerImg img{transition:transform 0.3s ease}.containerImg img:hover{transform:scale(1.2)}@media (max-width: 600px){.containerImg{flex-direction:column;gap:8px}.containerImg img:hover{transform:none}}
