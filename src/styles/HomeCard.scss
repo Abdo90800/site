@@ -1,49 +1,15 @@
-.swiper-pagination {
-    display: flex;
-    justify-content: center; // لتمركز النقاط
-    align-items: center;
-    gap: 8px; // المسافة بين النقاط
-    margin-top: 20px; // مسافة أعلى النقاط
-    .swiper-pagination-bullet {
-        width: 10px; // عرض النقطة
-        height: 8px; // ارتفاع النقطة
-        background-color: gray; // لون النقطة العادية
-        border-radius: 50%; // جعل النقاط دائرية
-        transition: all 0.3s ease; // تأثير عند التبديل
-        &-active {
-            background-color: #000; // لون النقطة النشطة
-            width: 30px; // جعل النقطة النشطة أكبر
-            border-radius: 16px; // جعل النقطة النشطة بيضاوية
-        }
-    }
-    @media (max-width: 1024px) {
-        .swiper-pagination-bullet {
-            background-color: gray;
-            border: none;
-        }
-        .swiper-pagination-bullet:nth-child(n + 5) {
-            display: none;
-        }
-        .swiper-pagination-bullet:nth-child(-n + 4) {
-            border: 1px solid gray;
-        }
-        .swiper-pagination-bullet-active {
-            background-color: transparent;
-            background-color: #000;
-        }
-    }
-}
-
 .mySwiper {
     position: relative;
-    padding: 0 50px; // Adjust padding to make space for the shadows
+    padding: 0 50px;
+    /* Adjust padding to make space for the shadows */
     &::before,
     &::after {
         content: "";
         position: absolute;
         top: 0;
         bottom: 0;
-        width: 400px; // Adjust width as needed
+        width: 400px;
+        /* Adjust width as needed */
         z-index: 10;
     }
     &::before {
@@ -79,22 +45,49 @@
     }
 }
 
-.swiper-pagination {
+#pagination {
     display: flex;
-    justify-content: center; // لتمركز النقاط
+    justify-content: center;
+    /* لتمركز النقاط */
     align-items: center;
-    gap: 8px; // المسافة بين النقاط
-    margin-top: 20px; // مسافة أعلى النقاط
+    gap: 8px;
+    /* المسافة بين النقاط */
+    margin-top: 20px;
+    /* مسافة أعلى النقاط */
+    position: absolute;
+    /* لتثبيت النقاط */
+    bottom: -1px;
+    /* رفع النقاط قليلاً */
+    left: 50%;
+    transform: translateX(-50%);
     .swiper-pagination-bullet {
-        width: 10px; // عرض النقطة
-        height: 8px; // ارتفاع النقطة
-        background-color: gray; // لون النقطة العادية
-        border-radius: 50%; // جعل النقاط دائرية
-        transition: all 0.3s ease; // تأثير عند التبديل
-        &-active {
-            background-color: #000; // لون النقطة النشطة
-            width: 30px; // جعل النقطة النشطة أكبر
-            border-radius: 16px; // جعل النقطة النشطة بيضاوية
+        width: 10px;
+        /* عرض النقطة */
+        height: 8px;
+        /* ارتفاع النقطة */
+        background-color: gray;
+        border-radius: 50%;
+        /* جعل النقاط دائرية */
+        transition: all 0.3s ease;
+        opacity: 0.5;
+        /* تقليل وضوح النقاط غير النشطة */
+        &:nth-child(n+5) {
+            display: none;
+            /* إخفاء أي نقاط بعد النقطة الرابعة */
         }
+        &-active {
+            background-color: #000;
+            /* لون النقطة النشطة */
+            width: 30px;
+            /* جعل النقطة النشطة أكبر */
+            border-radius: 16px;
+            /* جعل النقطة النشطة بيضاوية */
+            opacity: 1;
+            /* وضوح كامل للنقطة النشطة */
+        }
+    }
+    @media (max-width: 750px) {
+        bottom: -30px;
+        left: 40%;
     }
 }
