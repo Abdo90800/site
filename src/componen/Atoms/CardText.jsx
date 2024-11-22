@@ -1,6 +1,6 @@
-const CardText = ({ style, className, children }) => {
+const CardText = ({ style = {}, className = "", children, ...props }) => {
   return (
-    <div style={style} className={className}>
+    <div style={style} className={`${className}`} {...props}>
       {children}
     </div>
   );

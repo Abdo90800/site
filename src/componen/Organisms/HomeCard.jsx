@@ -37,71 +37,75 @@ const labels = {
 export default function Home() {
   const value = 3.5;
   return (
-    <Container sx={{ mt: 10, mb: 20 }}>
-      <Text
-        text={
-          <div className="pairenttextclients">
-            <span className="textListen">Don’t Just Listen to Us</span>
-
-            <span className="textclients">what our clients are saying</span>
-          </div>
-        }
-        className="textListen"
-      />
-
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-          },
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        {cardData.map((e, index) => (
-          <SwiperSlide key={index}>
-            <Card className="card">
-              <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
-                <Image
-                  src={e.photo}
-                  alt="image"
-                  width={40}
-                  height={40}
-                  style={{
-                    borderRadius: "50%",
-                  }}
-                />
-                <Typography level="body-sm" sx={{ maxWidth: "24ch" }}>
-                  {e.description}
-                </Typography>{" "}
-                <Rating
-                  name="text-feedback"
-                  value={value}
-                  readOnly
-                  precision={5}
-                  emptyIcon={
-                    <StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />
-                  }
-                />
-              </CardContent>
-            </Card>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </Container>
+    <Container sx={{ mt: 10, mb: 20 }} className="con">
+    <Text
+      text={
+        <div className="pairenttextclients">
+          <span className="textListen">Don’t Just Listen to Us</span>
+          <span className="textclients">what our clients are saying</span>
+        </div>
+      }
+      className="textListen"
+    />
+    
+    <div id="pagination"></div>
+  
+    <Swiper
+      slidesPerView={1}
+      spaceBetween={10}
+      pagination={{
+        el: "#pagination", 
+        clickable: true,
+      }}
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      }}
+      modules={[Pagination]}
+      className="mySwiper"
+    >
+      {cardData.map((e, index) => (
+        <SwiperSlide key={index}>
+          <Card className="card">
+            <CardContent sx={{ alignItems: "center", textAlign: "center" }}>
+              <Image
+                src={e.photo}
+                alt="image"
+                width={40}
+                height={40}
+                style={{
+                  borderRadius: "50%",
+                }}
+              />
+              <Typography level="body-sm" sx={{ maxWidth: "24ch" }}>
+                {e.description}
+              </Typography>{" "}
+              <Rating
+                name="text-feedback"
+                value={value}
+                readOnly
+                precision={5}
+                emptyIcon={
+                  <StarIcon style={{ opacity: 0.55 }} fontSize="inherit" />
+                }
+              />
+            </CardContent>
+          </Card>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </Container>
+  
+  
   );
 }

@@ -11,7 +11,7 @@ import { useState } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 const Navbar = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
-  const isDesktop = useMediaQuery("(min-width:700px)");
+  const isDesktop = useMediaQuery("(min-width:600px)");
   const [state, setState] = useState({
     top: false,
     left: false,

@@ -6,7 +6,6 @@ import Ourwork from "../Organisms/Ourwork";
 import SliderImgPhone from "../Organisms/SliderImgPhone";
 import PriceSection from "../Organisms/PriceSection";
 import QuestionSection from "../Organisms/QuestionSection";
-import Footer from "../Molecules/Footer";
 import FooterSection from "../Organisms/FooterSection";
 
 function HomeTemplate() {
@@ -28,7 +27,11 @@ function HomeTemplate() {
       <SliderImgPhone />
       <PriceSection />
       <QuestionSection />
-      <FooterSection />
+      <div
+        className="section relative overflow-hidden lg:bg-[url('/Section.png')] bg-[url('/Footer.png')] bg-cover bg-right lg:rounded-[24px] rounded-[12px] lg:m-[24px] m-[16px] mx-auto"
+      >
+        <FooterSection />
+      </div>
     </>
   );
 }
