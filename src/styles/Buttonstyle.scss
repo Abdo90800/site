@@ -1,37 +1,39 @@
-.custom-button {
-    color: #fff;
-    background-color: #121212;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    text-align: center;
-}
-
-.custom-button::after {
-    content: "Lets talk";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #fff;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.custom-button:hover::after {
-    opacity: 1;
-}
-
-.custom-button:hover {
-    color: transparent;
-    background: linear-gradient(239.08deg, #17223B -22.66%, #1A3861 61.15%);
-}
+    .custom-button {
+        color: #fff;
+        background-color: #121212;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        position: relative;
+        text-align: center;
+    }
+    
+    .custom-button::after {
+        content: "Lets talk";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: #fff;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    .custom-button:hover::after {
+        opacity: 1;
+    }
+    
+    .custom-button:hover {
+        color: transparent;
+        background: linear-gradient(239.08deg, #17223B -22.66%, #1A3861 61.15%);
+    }
+    
+    @media (max-width: 600px) {}

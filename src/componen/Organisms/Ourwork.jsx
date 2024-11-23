@@ -23,13 +23,13 @@ function Ourwork() {
           src="/images/glasstel.png"
           alt="Glasstel1"
           className="Glasstel"
-          style={{ width: "570px", height: "427px" }}
+          style={{ width: "560px", height: "427px" }}
         />
         <img
           src="/images/Glasstel2.png"
           alt="Glasstel2"
           className="glasstel"
-          style={{ width: "570px", height: "427px" }}
+          style={{ width: "560px", height: "427px" }}
         />
       </Container>
     </div>

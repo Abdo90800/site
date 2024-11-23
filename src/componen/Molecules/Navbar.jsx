@@ -28,9 +28,13 @@ const Navbar = () => {
     }
     setState({ ...state, [anchor]: open });
   };
-
+  const handleClick = () => {
+    window.location.href = "tel:+01550227582";
+  };
   return (
     <div className="NAVBAR">
+
+      
       <div className="navbar-content">
         <Link href="/">
           <img src="/logo.png" alt="Logo" className="logo" />
@@ -43,7 +47,7 @@ const Navbar = () => {
             <Link href="#faqs">FAQs</Link>
           </>
         )}
-        <Buttonn>We're here</Buttonn>
+        <button onClick={handleClick} className="custom-button" id="ptn">We're here</button>
 
         <IconButton
           sx={{

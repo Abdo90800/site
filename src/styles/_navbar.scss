@@ -85,6 +85,10 @@ $desktop: 1024px;
         transform: translateX(-50%);
         z-index: 1000;
         border: 1px solid #E1E1E1;
+        #ptn {
+            position: absolute;
+            right: 45px;
+        }
     }
 }
 
