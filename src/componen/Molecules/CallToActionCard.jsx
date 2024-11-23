@@ -5,7 +5,11 @@ import Text from "../atoms/Text";
 const CallToActionCard = () => (
   <div className="call-to-action-card">
     <div className="div-text">
-      <img src="/logoIslam.png" alt="Profile" className="profile-image" />
+      <img
+        src="/images/imageclient1.png"
+        alt="Profile"
+        className="profile-image"
+      />
       <Text
         className="name"
         text="Free 15-min call"
